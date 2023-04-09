@@ -68,4 +68,10 @@ public class Main {
         }
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
+    static int power(int a, int n){
+        if(n == 1){
+            return a;
+        }
+        return power(a, n - 1) * a;
+    }
 }
