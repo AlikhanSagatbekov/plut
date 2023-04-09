@@ -74,4 +74,12 @@ public class Main {
         }
         return power(a, n - 1) * a;
     }
+    static void printArrayInReverse(int n){
+        if(n > 0){
+            int input = sc.nextInt();
+            printArrayInReverse(n - 1);
+            System.out.print(input);
+            System.out.print(" ");
+        }
+    }
 }
