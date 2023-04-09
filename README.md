@@ -1,4 +1,4 @@
-Assingment 1
+# Assingment 1
 this file contains 10 functions related to recursion in Java. 1 func: find min in arr
 
 2 func: find average in arr
@@ -19,5 +19,5 @@ this file contains 10 functions related to recursion in Java. 1 func: find min i
 
 10 func: finding GCD(a, b) using recursion.
 
-USAGE
+## USAGE
 Open a project using IntelliJ IDEA. To check the operation of each function, you need to uncomment the necessary call and run the code.
