@@ -7,9 +7,14 @@ public class Main {
         for ( int i=0; i < n; i++){
             arr[i] = sc.nextInt();
         }
-//        int min = FindMin(arr, n);
-//        System.out.println("Minimum is " + min);
+//         int min = FindMin(arr, n);
+//         System.out.println("Minimum is " + min);
 //         System.out.println(findAverage(0,0,arr));
+//        if (isPrime(n, 2)){
+//        System.out.println("Prime");
+         // }else{
+           //System.out.println("Composite");
+        // }
     }
     public static int FindMin(int[] arr, int n){
         if(n==1){
@@ -26,4 +31,17 @@ public class Main {
         }
         return findAverage(sum + arr[n], n + 1, arr);
     }
+    static boolean isPrime(int n, int temp) {
+        if (n <= 2 && n > 0)
+            return true;
+        if (n % temp == 0) {
+            return false;
+        }
+        if (temp * temp > n) {
+            return true;
+        }
+        temp++;
+        return isPrime(n, temp);
+    }
+
 }
