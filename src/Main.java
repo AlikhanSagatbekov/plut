@@ -93,4 +93,11 @@ public class Main {
     static int bigC(int n, int r){
         return factorial(n) / (factorial(n - r) * factorial(r));
     }
+    static int GCD(int a, int b){
+        if(b == 0){
+            return a;
+        }
+        System.out.println(a  + " " + b);
+        return GCD(b, a % b);
+    }
 }
