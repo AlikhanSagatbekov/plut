@@ -90,4 +90,7 @@ public class Main {
         }
         return true;
     }
+    static int bigC(int n, int r){
+        return factorial(n) / (factorial(n - r) * factorial(r));
+    }
 }
